@@ -1,0 +1,99 @@
+*{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+}
+
+body{
+    background: #D5D9FF;
+    margin: 0 auto;
+    position: relative;
+    max-width: 374px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper{
+    margin-top: 25px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    max-width: 374px;
+}
+
+.links a{
+    width: 294px;
+    background: #0032E2;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 14px 0;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.links a img{
+    max-width: 20px;
+    position: absolute;
+    left: 26px;
+}
+
+.menu-wrapper{
+    position: relative;
+    max-width: 258px;
+    background: #EEEEEE;
+    box-shadow: 0px 3px 23px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-wrapper button{
+    padding: 10px;
+    width: calc(50% - 4px);
+    border: 0PX;
+    background: transparent;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: all .25s ease;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    z-index: 2;
+}
+
+.menu-wrapper button.active{
+    background-color: white;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.25);
+    color: #0032E2;
+}
