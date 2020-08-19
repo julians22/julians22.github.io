@@ -30,13 +30,28 @@ body{
     overflow-y: hidden;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     flex: 1;
     height: 100%;
     position: relative;
     max-width: 374px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 374px;
+    width: 100%;
+    margin: auto;
+    min-width: 100%;
+    scroll-snap-align: center;
+    flex: 1;
+    overflow: auto;
 }
 
 .links a{
@@ -61,6 +76,23 @@ body{
     max-width: 20px;
     position: absolute;
     left: 26px;
+}
+
+.posts{
+    min-width: 100%;
+    scroll-snap-align: center;
+    overflow: auto;
+    max-width: 374px;
+    padding: 20px;
+}
+
+.posts .content{
+    min-width: 100%;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    display: block;
+    margin: 20px 0px;
 }
 
 .menu-wrapper{
