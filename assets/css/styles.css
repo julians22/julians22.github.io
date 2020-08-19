@@ -2,7 +2,6 @@
     font-family: 'PT Sans Narrow', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
     line-height: 18px;
     box-sizing: border-box;
 }
@@ -12,6 +11,7 @@ html{
 }
 
 body{
+    font-size: 14px;
     background: #D5D9FF;
     margin: 0 auto;
     position: relative;
@@ -93,7 +93,18 @@ body{
     box-sizing: border-box;
     display: block;
     margin: 20px 0px;
+    text-align: center;
 }
+
+.posts .content span.title-text{
+    font-size: 28px;
+    padding: 10px;
+}
+
+.posts .content iframe{
+    position: relative;
+}
+
 
 .menu-wrapper{
     position: relative;
@@ -138,4 +149,8 @@ body{
         max-width: 100%;
         width: 100%;
     }
+}
+
+#widget .badge{
+    border-radius: 22px !important;
 }
